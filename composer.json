@@ -1,0 +1,23 @@
+{
+  "name": "vis/subscribe_manager_l5",
+  "description": "Subscribe management package for VIS cms",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "K.Gluschenko",
+      "email": "k.gluschenko@vis-design.com"
+    }
+  ],
+  "require": {
+  },
+  "autoload": {
+    "classmap": [
+      "src/Models",
+      "src/Http/Controllers",
+      "src/Migrations"
+    ],
+    "psr-4": {
+      "Vis\\SubscribeManager\\": "src/"
+    }
+  }
+}
