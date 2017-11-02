@@ -8,11 +8,11 @@ class Subscriber extends Model
 {
     protected $table = 'vis_subscribers';
 
-    protected $fillable = array(
+    protected $fillable = [
         'email',
         'lang',
         'is_active',
-    );
+    ];
 
     public function entities()
     {

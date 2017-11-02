@@ -10,6 +10,11 @@ class SubscribeEntity extends Model
 
     protected $table = 'vis_subscribe_entities';
 
+    protected $fillable = [
+        'title',
+        'is_active',
+    ];
+
     public function subscribers()
     {
         return $this->belongsToMany('Vis\SubscribeManager\Subscriber', 'vis_subscribers2vis_subscribe_entities');
